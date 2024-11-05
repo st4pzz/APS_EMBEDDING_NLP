@@ -1,3 +1,7 @@
 env
 .env
 /dataset/scraped_lyrics.csv
+.venv
+venv
+/venv
+/env
