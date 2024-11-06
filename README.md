@@ -139,6 +139,115 @@ In **Figure 1**, the pre-trained embeddings show some clustering, but the cluste
 
 *Explanation*: The system retrieves songs related to adolescence and personal growth, demonstrating understanding beyond explicit keywords.
 
+## Usage Instructions
+
+To run the code locally, follow these steps:
+
+### Prerequisites
+
+- Python 3.7 or higher installed on your system.
+- `pip` package manager.
+- Access to the dataset file `scraped_lyrics.csv`.
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/semantic-song-search.git
+   ```
+
+2. **Navigate to the Project Directory**
+
+   ```bash
+   cd semantic-song-search
+   ```
+
+3. **Create a Virtual Environment (Optional but Recommended)**
+
+   ```bash
+   python -m venv venv
+   ```
+
+4. **Activate the Virtual Environment**
+
+   - On Windows:
+
+     ```bash
+     venv\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+5. **Install Required Packages**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Prepare the Dataset
+
+Ensure that the dataset file `scraped_lyrics.csv` is placed in the `dataset` directory within the project folder.
+
+### Running the Application
+
+1. **Generate Embeddings**
+
+   Run the script to generate embeddings for the lyrics:
+
+   ```bash
+   python generate_embeddings.py
+   ```
+
+   This script will:
+
+   - Preprocess the lyrics.
+   - Generate embeddings using SBERT.
+   - Save the embeddings for use in the search application.
+
+2. **Start the Search Application**
+
+   Run the main application script:
+
+   ```bash
+   python main.py
+   ```
+
+   This will start the FastAPI server on `http://localhost:8000`.
+
+### Using the Search API
+
+You can perform searches by sending requests to the `/query` endpoint.
+
+- **Example Query**
+
+  Open a web browser or use `curl` to access:
+
+  ```bash
+  http://localhost:8000/query?query=love+and+heartbreak
+  ```
+
+- **Sample Response**
+
+  The API will return a JSON response with the top matching songs.
+
+### Stopping the Application
+
+To stop the application, press `Ctrl+C` in the terminal where the server is running.
+
+### Deactivating the Virtual Environment
+
+When you are done, you can deactivate the virtual environment:
+
+```bash
+deactivate
+```
+
+
 ## Conclusion
 
 This research presents a semantic search system that effectively retrieves songs based on the underlying meaning of user queries. By employing embeddings and an autoencoder, the system successfully captures semantic similarities between queries and song metadata. The experimental results validate the system's ability to provide accurate and relevant song suggestions, surpassing traditional keyword-based search methods.
@@ -149,5 +258,6 @@ This research presents a semantic search system that effectively retrieves songs
 - [Transformers Documentation](https://huggingface.co/transformers/)
 - [t-SNE Algorithm](https://lvdmaaten.github.io/tsne/)
 - [Autoencoders](https://www.deeplearningbook.org/contents/autoencoders.html)
+
 
 ---
