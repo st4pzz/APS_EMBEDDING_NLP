@@ -49,7 +49,6 @@ def search(query, top_k=10):
         if title not in titles:
             results.append({
                 'Song Name': title,
-                'Artist': df.iloc[idx]['Artist'],
                 'Lyrics': df.iloc[idx]['Lyrics'],
                 'Similarity': float(similarities[idx])
             })
