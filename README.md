@@ -59,9 +59,7 @@ We improve the quality of embeddings by implementing a **Denoising Autoencoder**
 
 We use the **Mean Squared Error (MSE)** loss function to train the autoencoder:
 
-\[
-\mathcal{L}(\theta) = \frac{1}{n} \sum_{i=1}^{n} \left\| x_i - \hat{x}_i \right\|^2
-\]
+<span style="display: block; text-align: center;">L(θ) = (1/n) Σ (||xi - xi_hat||<sup>2</sup>)</span>
 
 Where:
 - \( x_i \) is the original embedding.
@@ -70,25 +68,34 @@ Where:
 
 This loss function minimizes the reconstruction error, allowing the autoencoder to learn compressed representations that capture essential features.
 
+**Diagram** shows the neural network topology and hyperparameters
+
+![Figure 1: neural network topology and hyperparameters ](img/diagram.png)
+
+*Figure 1: Visualization of the neural network topology and hyperparameters.*
+
+```To generate the embeddings, we utilized a noise reduction autoencoder designed to refine the SBERT-generated embeddings of the song lyrics. The autoencoder's architecture comprises an encoder and a decoder. The encoder consists of two dense layers with 512 and 256 neurons respectively, each followed by a ReLU activation function. This compresses the 768-dimensional input embeddings down to a 256-dimensional latent representation. The decoder mirrors the encoder with layers of 512 neurons and an output layer restoring the embeddings back to 768 dimensions. We trained the autoencoder using the Mean Squared Error (MSE) loss function and the Adam optimizer with a learning rate of 0.001 over 10 epochs.```
+
+
 ## Visualization of Embeddings
 
 We visualize the embeddings using **t-Distributed Stochastic Neighbor Embedding (t-SNE)** to project them into a 2D space.
 
-**Figure 1** shows the t-SNE visualization of the pre-trained SBERT embeddings:
+**Figure 2** shows the t-SNE visualization of the pre-trained SBERT embeddings:
 
-![Figure 1: t-SNE of Pre-trained Embeddings](img/output.png)
+![Figure 2: t-SNE of Pre-trained Embeddings](img/output.png)
 
-*Figure 1: Visualization of pre-trained embeddings without tuning.*
+*Figure 2: Visualization of pre-trained embeddings without tuning.*
 
-**Figure 2** shows the t-SNE visualization of the enhanced embeddings after autoencoder tuning:
+**Figure 3** shows the t-SNE visualization of the enhanced embeddings after autoencoder tuning:
 
-![Figure 2: t-SNE of Enhanced Embeddings](img/output_2.png)
+![Figure 3: t-SNE of Enhanced Embeddings](img/output_2.png)
 
-*Figure 2: Visualization of embeddings after enhancement with the autoencoder.*
+*Figure 3: Visualization of embeddings after enhancement with the autoencoder.*
 
 ### Discussion
 
-In **Figure 1**, the pre-trained embeddings show some clustering, but the clusters are not well-defined. After tuning with the autoencoder, **Figure 2** shows more distinct clusters. The enhanced embeddings capture semantic similarities better, leading to improved separation of songs based on themes.
+In **Figure 2**, the pre-trained embeddings show some clustering, but the clusters are not well-defined. After tuning with the autoencoder, **Figure 3** shows more distinct clusters. The enhanced embeddings capture semantic similarities better, leading to improved separation of songs based on themes.
 
 ## Test Results
 
