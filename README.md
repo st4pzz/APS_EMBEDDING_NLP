@@ -122,7 +122,6 @@ In **Figure 1**, the pre-trained embeddings show some clustering, but the cluste
 | Supercalifragilisticexpialidocious   | 0.51       |
 
 
-*Explanation*: The query is a rare medical term unlikely to appear in song lyrics. The system appropriately returns one result.
 
 ### Test 3: Query Yielding Non-Obvious Results
 
@@ -142,9 +141,6 @@ In **Figure 1**, the pre-trained embeddings show some clustering, but the cluste
 | Invisible Horizons               | 0.35       |
 | Golden Age                       | 0.34       |
 | Mother Shipton's Words           | 0.34       |
-
-*Explanation*: The system retrieves songs related to adolescence and personal growth, demonstrating understanding beyond explicit keywords.
-
 
 
 ## Step 4: Entrepreneur Path
