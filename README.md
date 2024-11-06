@@ -154,13 +154,13 @@ To run the code locally, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/semantic-song-search.git
+   git clone https://github.com/st4pzz/APS_EMBEDDING_NLP.git
    ```
 
 2. **Navigate to the Project Directory**
 
    ```bash
-   cd semantic-song-search
+   cd APS_EMBEDDING_NLP
    ```
 
 3. **Create a Virtual Environment (Optional but Recommended)**
