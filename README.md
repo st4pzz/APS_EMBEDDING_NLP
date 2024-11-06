@@ -62,8 +62,8 @@ We use the **Mean Squared Error (MSE)** loss function to train the autoencoder:
 <span style="display: block; text-align: center;">L(θ) = (1/n) Σ (||xi - xi_hat||<sup>2</sup>)</span>
 
 Where:
-- \( x_i \) is the original embedding.
-- \( \hat{x}_i \) is the reconstructed embedding from the autoencoder.
+- \( xi \) is the original embedding.
+- \( xi_hat \) is the reconstructed embedding from the autoencoder.
 - \( n \) is the number of samples.
 
 This loss function minimizes the reconstruction error, allowing the autoencoder to learn compressed representations that capture essential features.
