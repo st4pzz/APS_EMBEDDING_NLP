@@ -94,45 +94,48 @@ In **Figure 1**, the pre-trained embeddings show some clustering, but the cluste
 
 | Song Name                        | Similarity |
 |----------------------------------|------------|
-| The Rose                         | 0.61       |
-| Love Will Tear Us Apart          | 0.60       |
-| What Is This Thing Called Love   | 0.59       |
-| Someone Like You                 | 0.58       |
-| Heartbreak Hotel                 | 0.57       |
-| Back to Black                    | 0.56       |
-| Nothing Compares 2 U             | 0.55       |
-| Somebody That I Used to Know     | 0.54       |
-| Apologize                        | 0.53       |
-| Stay With Me                     | 0.52       |
+| The Rose                         | 0.59       |
+|  With Or Without                 | 0.58       |
+| Get Together                     | 0.58       |
+| What Is This Thing Called Love   | 0.57       |
+| Hands Off the Wheel              | 0.57       |
+|  Love Will Tear Us Apart         | 0.56       |
+| MMMBop                           | 0.55       |
+| Something About You              | 0.54       |
+| It Would Be You                  | 0.53       |
+| Brand New Day                    | 0.52       |
 
 ### Test 2: Query Yielding Less Than 10 Results
 
-**Query**: `"pneumonoultramicroscopicsilicovolcanoconiosis"`
+**Query**: `"antidisestablishmentarianism"`
 
 **Results**:
 
-No matching songs found for this query.
+| Song Name                            | Similarity |
+|--------------------------------------|------------|
+| Supercalifragilisticexpialidocious   | 0.51       |
 
-*Explanation*: The query is a rare medical term unlikely to appear in song lyrics. The system appropriately returns no results.
+
+*Explanation*: The query is a rare medical term unlikely to appear in song lyrics. The system appropriately returns one result.
 
 ### Test 3: Query Yielding Non-Obvious Results
 
-**Query**: `"the struggles of growing up"`
+**Query**: `"time travel paradox"`
 
 **Results**:
 
 | Song Name                        | Similarity |
 |----------------------------------|------------|
-| Youth                            | 0.59       |
-| Wake Me Up When September Ends   | 0.58       |
-| The Suburbs                      | 0.57       |
-| Castle on the Hill               | 0.56       |
-| 7 Years                          | 0.55       |
-| Lost Boy                         | 0.54       |
-| Fast Car                         | 0.53       |
-| Brick                            | 0.52       |
-| Stressed Out                     | 0.51       |
-| Not Afraid                       | 0.50       |
+| Tribute to the Past              | 0.46       |
+| Spending Time [Multimedia Track] | 0.42       |
+| Where Do We Go From Here         | 0.39       |
+| Another Space                    | 0.39       |
+| Absolute Zero                    | 0.38       |
+| Time in a Bottle                 | 0.37       |
+| Time Travel in Texas             | 0.35       |
+| Invisible Horizons               | 0.35       |
+| Golden Age                       | 0.34       |
+| Mother Shipton's Words           | 0.34       |
 
 *Explanation*: The system retrieves songs related to adolescence and personal growth, demonstrating understanding beyond explicit keywords.
 
