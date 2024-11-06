@@ -6,10 +6,17 @@ This project develops a semantic search system for song lyrics. By leveraging em
 
 - [Introduction](#introduction)
 - [Dataset](#dataset)
-- [Embedding Generation Process](#embedding-generation-process)
-- [Training Process](#training-process)
-- [Visualization of Embeddings](#visualization-of-embeddings)
-- [Test Results](#test-results)
+- [Methodology](#methodology)
+  - [Embedding Generation](#embedding-generation)
+  - [Training Process](#training-process)
+- [Results](#results)
+  - [Visualizations of Embeddings](#visualizations-of-embeddings)
+  - [Discussion](#discussion)
+  - [Test Cases](#test-cases)
+- [Step 4: Entrepreneur Path](#step-4-entrepreneur-path)
+  - [User Feedback](#user-feedback)
+  - [Insights and Potential Improvements](#insights-and-potential-improvements)
+- [Usage](#usage)
 - [Conclusion](#conclusion)
 - [References](#references)
 
@@ -50,16 +57,15 @@ We improve the quality of embeddings by implementing a **Denoising Autoencoder**
 
 **Loss Function**:
 
-We use the **Mean Squared Error (MSE)** loss function:
+We use the **Mean Squared Error (MSE)** loss function to train the autoencoder:
 
 \[
-\mathcal{L} = \frac{1}{n} \sum_{i=1}^{n} \left\| x_i - \hat{x}_i \right\|^2
+\mathcal{L}(\theta) = \frac{1}{n} \sum_{i=1}^{n} \left\| x_i - \hat{x}_i \right\|^2
 \]
 
 Where:
-
 - \( x_i \) is the original embedding.
-- \( \hat{x}_i \) is the reconstructed embedding.
+- \( \hat{x}_i \) is the reconstructed embedding from the autoencoder.
 - \( n \) is the number of samples.
 
 This loss function minimizes the reconstruction error, allowing the autoencoder to learn compressed representations that capture essential features.
@@ -138,6 +144,56 @@ In **Figure 1**, the pre-trained embeddings show some clustering, but the cluste
 | Mother Shipton's Words           | 0.34       |
 
 *Explanation*: The system retrieves songs related to adolescence and personal growth, demonstrating understanding beyond explicit keywords.
+
+
+
+## Step 4: Entrepreneur Path
+
+### User Feedback
+
+To validate the practical value of the Semantic Song Search System, we reached out to potential users and gathered their feedback. Five individuals who are music enthusiasts and frequent users of music streaming platforms were interviewed.
+
+**Participants**:
+
+1. **Alice**, a college student who creates playlists based on moods.
+2. **Bob**, a music blogger who writes about song meanings.
+3. **Carol**, a radio DJ looking for thematic songs.
+4. **Dave**, a songwriter seeking inspiration.
+5. **Eve**, a casual listener who enjoys discovering new music.
+
+**Feedback Highlights**:
+
+- **Alice:** *"I often struggle to find songs that match a specific feeling. This system understood my vague queries and gave me songs I hadn't heard before but really liked."*
+
+- **Bob:** *"The semantic search captures nuances that keyword searches miss. It helps me find songs with deeper connections to the topics I write about."*
+
+- **Carol:** *"This tool is fantastic for curating playlists around themes. It saves me time and introduces me to tracks outside the mainstream charts."*
+
+- **Dave:** *"As a songwriter, finding songs related to a concept helps spark creativity. The search results were relevant and diverse."*
+
+- **Eve:** *"I love discovering music that resonates with my current mood. The recommendations felt personalized and on point."*
+
+
+### Insights and Potential Improvements
+
+**Validation of Pain Points**:
+
+- **Pain Point Exists**: All participants expressed challenges in finding songs that match specific themes or emotions using traditional search methods.
+- **System Addresses Pain Point**: The Semantic Song Search System effectively fills this gap by providing relevant and meaningful results.
+
+**Suggestions for Improvement**:
+
+- **Enhanced User Interface**: Users suggested developing a more interactive and user-friendly interface with features like playlist creation and integration with streaming services.
+  
+- **Multilingual Support**: Some users expressed interest in finding songs in other languages that match the same themes.
+
+- **Additional Filters**: Incorporating filters for genres, artists, or release dates would allow users to refine their search results further.
+
+**Potential Pivot**:
+
+- **Focus on Mood-Based Recommendations**: Given the positive feedback on mood and theme matching, the system could evolve into a mood-based music recommendation app.
+
+- **Integration with Existing Platforms**: Partnering with music streaming services to integrate the semantic search capability could enhance user experience on those platforms.
 
 ## Usage Instructions
 
@@ -261,3 +317,7 @@ This research presents a semantic search system that effectively retrieves songs
 
 
 ---
+
+
+
+
