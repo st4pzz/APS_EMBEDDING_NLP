@@ -68,17 +68,17 @@ This loss function minimizes the reconstruction error, allowing the autoencoder 
 
 We visualize the embeddings using **t-Distributed Stochastic Neighbor Embedding (t-SNE)** to project them into a 2D space.
 
-**Figure 2** shows the t-SNE visualization of the pre-trained SBERT embeddings:
+**Figure 1** shows the t-SNE visualization of the pre-trained SBERT embeddings:
 
-![Figure 2: t-SNE of Pre-trained Embeddings](img/output.png)
+![Figure 1: t-SNE of Pre-trained Embeddings](img/output.png)
 
-*Figure 2: Visualization of pre-trained embeddings without tuning.*
+*Figure 1: Visualization of pre-trained embeddings without tuning.*
 
-**Figure 3** shows the t-SNE visualization of the enhanced embeddings after autoencoder tuning:
+**Figure 2** shows the t-SNE visualization of the enhanced embeddings after autoencoder tuning:
 
-![Figure 3: t-SNE of Enhanced Embeddings](img/output_2.png)
+![Figure 2: t-SNE of Enhanced Embeddings](img/output_2.png)
 
-*Figure 3: Visualization of embeddings after enhancement with the autoencoder.*
+*Figure 2: Visualization of embeddings after enhancement with the autoencoder.*
 
 ### Discussion
 
