@@ -70,7 +70,7 @@ This loss function minimizes the reconstruction error, allowing the autoencoder 
 
 **Diagram** shows the neural network topology and hyperparameters
 
-![Figure 1: neural network topology and hyperparameters ](img/diagram.png)
+![Figure 1: neural network topology and hyperparameters ](img/diagram.PNG)
 
 *Figure 1: Visualization of the neural network topology and hyperparameters.*
 
@@ -83,13 +83,13 @@ We visualize the embeddings using **t-Distributed Stochastic Neighbor Embedding 
 
 **Figure 2** shows the t-SNE visualization of the pre-trained SBERT embeddings:
 
-![Figure 2: t-SNE of Pre-trained Embeddings](img/pre1.png)
+![Figure 2: t-SNE of Pre-trained Embeddings](img/pre1.PNG)
 
 *Figure 2: Visualization of pre-trained embeddings without tuning.*
 
 **Figure 3** shows the t-SNE visualization of the enhanced embeddings after autoencoder tuning:
 
-![Figure 3: t-SNE of Enhanced Embeddings](img/pre.png)
+![Figure 3: t-SNE of Enhanced Embeddings](img/pre.PNG)
 
 *Figure 3: Visualization of embeddings after enhancement with the autoencoder.*
 
