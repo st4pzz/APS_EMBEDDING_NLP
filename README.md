@@ -161,15 +161,9 @@ To validate the practical value of the Semantic Song Search System, we reached o
 4. **Marcelo**
 5. **Diogo**
 
-**Eduardo Barros:** *"Eu costumava ter dificuldade em encontrar músicas que combinassem com um sentimento específico. Esse sistema entendeu minhas consultas vagas e me deu músicas que eu nunca tinha ouvido antes, mas que realmente gostei."*
 
-**Enzo Quental:** *"A busca semântica capta nuances que as buscas por palavras-chave ignoram. Isso me ajuda a encontrar músicas com conexões mais profundas com os tópicos sobre os quais escrevo."*
+![Figure 3: typical phrases and reviews](img/feedbacks.PNG)
 
-**Julia:** *"Essa ferramenta é fantástica para curar playlists em torno de temas. Ela me economiza tempo e me apresenta a faixas fora das paradas principais."*
-
-**Marcelo:** *"Como compositor, encontrar músicas relacionadas a um conceito ajuda a despertar a criatividade. Os resultados da pesquisa foram relevantes e diversos."*
-
-**Diogo:** *"Eu adoro descobrir músicas que ressoam com meu humor atual. As recomendações foram personalizadas e precisas."*
 
 
 
