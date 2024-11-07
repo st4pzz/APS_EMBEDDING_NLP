@@ -93,7 +93,7 @@ We visualize the embeddings using **t-Distributed Stochastic Neighbor Embedding 
 
 ### Discussion
 
-In **Figure 2**, the pre-trained embeddings show some clustering, but the clusters are not well-defined. After tuning with the autoencoder, **Figure 3** shows more distinct clusters. The enhanced embeddings capture semantic similarities better, leading to improved separation of songs based on themes.
+As shown in **Figure 2**, the original embeddings exhibit some clustering, but the groups are not clearly defined. After applying the autoencoder, **Figure 3** reveals more distinct clusters. This enhanced representation better captures semantic similarities, allowing for a clearer separation of songs based on themes. By analyzing a subset of 11 categories from the dataset's 19,000+, we observed that the autoencoder effectively groups songs with similar themes.
 
 ## Test Results
 
