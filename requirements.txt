@@ -4,3 +4,7 @@ torch
 numpy
 pandas
 transformers
+langdetect
+fastapi
+uvicorn
+sentence_transformers
