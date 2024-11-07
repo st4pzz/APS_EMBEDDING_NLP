@@ -64,7 +64,7 @@ Where:
 - \( xi_hat \) is the reconstructed embedding from the autoencoder.
 - \( n \) is the number of samples.
 
-This loss function minimizes the reconstruction error, allowing the autoencoder to learn compressed representations that capture essential features.
+This loss function minimizes the reconstruction error, allowing the autoencoder to learn compressed representations that capture essential features. Also, MSE is appropriate for handling this type of data, as it penalizes larger errors more severely and facilitates the preservation of critical information. By minimizing MSE during training, the autoencoder refines the embeddings to be more representative and enhances the performance of your semantic search system by providing higher-quality embeddings for similarity comparisons.
 
 **Diagram** shows the neural network topology and hyperparameters
 
