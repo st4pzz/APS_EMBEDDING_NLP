@@ -118,6 +118,9 @@ In **Figure 2**, the pre-trained embeddings show some clustering, but the cluste
 | It Would Be You                  | 0.53       |
 | Brand New Day                    | 0.52       |
 
+`Explanation: The system retrieves songs that are semantically related to love and heartbreak. This demonstrates its effectiveness.`
+
+
 ### Test 2: Query Yielding Less Than 10 Results
 
 **Query**: `"antidisestablishmentarianism"`
@@ -128,6 +131,7 @@ In **Figure 2**, the pre-trained embeddings show some clustering, but the cluste
 |--------------------------------------|------------|
 | Supercalifragilisticexpialidocious   | 0.51       |
 
+`Explanation: The query is a rare medical term unlikely to appear in song lyrics. The system appropriately returns one results.`
 
 
 ### Test 3: Query Yielding Non-Obvious Results
@@ -148,6 +152,8 @@ In **Figure 2**, the pre-trained embeddings show some clustering, but the cluste
 | Invisible Horizons               | 0.35       |
 | Golden Age                       | 0.34       |
 | Mother Shipton's Words           | 0.34       |
+
+`Explanation: The system retrieves songs about time, past and travel. This shows understanding beyond explicit keywords.`
 
 
 ## Step 4: Entrepreneur Path
