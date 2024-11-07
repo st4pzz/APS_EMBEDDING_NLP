@@ -1,7 +1,5 @@
 # Semantic Song Search System
 
-This project develops a semantic search system for song lyrics. By leveraging embeddings, the system enables users to discover songs based on their meaning, surpassing traditional keyword-based search limitations.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -26,7 +24,7 @@ This project enhances traditional lyric search systems by leveraging semantic em
 
 ## Dataset
 
-Our comprehensive dataset encompasses approximately 30,000 song lyrics harvested from varied genres and artists. Data points include song titles, corresponding artists and lyrics. Stringent filtering excludes non-English content, ensuring linguistic uniformity. Rigorous preprocessing further refines the dataset.
+Our comprehensive dataset encompasses approximately 38,000 song lyrics harvested from varied genres and artists. Data points include song titles and lyrics. Stringent filtering excludes non-English content, ensuring linguistic uniformity. Rigorous preprocessing further refines the dataset. The data was obtained through web scraping from the site wwww.lyrics.com This site was chosen for its comprehensiveness and easy access to a large number of song lyrics from different genres and artists.
 
 ## Embedding Generation Process
 
